@@ -16,13 +16,7 @@ const IndexPage = () => {
             <main className="flex flex-col items-center justify-center w-full">
                 <section className="flex flex-col items-center justify-center w-full z-10">
                     <div className="relative">
-                        <div className="max-h-auto lg:min-h-[32rem] overflow-y-hidden overflow-x-hidden absolute ">
-                            <img
-                                src="/images/banner.png"
-                                alt=""
-                                className="opacity-20 md:w-full w-[200%]"
-                            />
-                        </div>
+
                         <div className="max-h-auto lg:h-[32rem] w-full flex items-center justify-between flex-col py-10">
                             <img
                                 src="/images/splash.png"
@@ -43,7 +37,7 @@ const IndexPage = () => {
                                     className="mx-4 transition-all hover:text-white cursor-pointer text-[40px]"
                                 />
                             </div>
-                            <div className="max-h-56 lg:max-h-[8rem] bg-neutral-700/20 text-white w-full mt-8 py-6 px-10 md:px-56 text-center shadow-lg text-lg backdrop-blur-md">
+                            <div className="max-h-56 lg:max-h-[8rem] bg-neutral-700/20 text-white w-full mt-8 py-6 px-10 md:px-56 text-center shadow-lg text-lg ">
                                 STALKER GAMMA (gigantic automated modular
                                 modpack for anomaly) is a completely free
                                 stalker mod. it combines over 300 addons made by
