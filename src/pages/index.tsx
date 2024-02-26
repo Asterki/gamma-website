@@ -4,7 +4,8 @@ import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faNewspaper, faHome } from "@fortawesome/free-solid-svg-icons";
+import NavbarComponent from "@/components/navbar";
 
 const IndexPage = () => {
     return (
@@ -16,34 +17,10 @@ const IndexPage = () => {
             <main className="flex flex-col items-center justify-center w-full">
                 <section className="flex flex-col items-center justify-center w-full z-10">
                     <div className="relative">
-
                         <div className="max-h-auto lg:h-[32rem] w-full flex items-center justify-between flex-col py-10">
-                            <img
-                                src="/images/splash.png"
-                                alt=""
-                                className="max-h-[16rem]"
-                            />
-                            <div className="max-h-56 lg:max-h-[4rem] w-full p-4 flex items-center justify-center text-white/50 text-2xl box-shadow-md">
-                                <FontAwesomeIcon
-                                    icon={faDiscord}
-                                    className="mx-4 transition-all hover:text-white cursor-pointer text-[40px]"
-                                />
-                                <FontAwesomeIcon
-                                    icon={faGithub}
-                                    className="mx-4 transition-all hover:text-white cursor-pointer text-[40px]"
-                                />
-                                <FontAwesomeIcon
-                                    icon={faDownload}
-                                    className="mx-4 transition-all hover:text-white cursor-pointer text-[40px]"
-                                />
-                            </div>
+                            <NavbarComponent page="home" />
                             <div className="max-h-56 lg:max-h-[8rem] bg-neutral-700/20 text-white w-full mt-8 py-6 px-10 md:px-56 text-center shadow-lg text-lg ">
-                                STALKER GAMMA (gigantic automated modular
-                                modpack for anomaly) is a completely free
-                                stalker mod. it combines over 300 addons made by
-                                dozens of modders as well as myriad of
-                                specifically-developped addons in a complete
-                                overhaul of the stalker anomaly experience
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in, perspiciatis maxime deleniti quod quae delectus! Praesentium aliquid rem placeat! At maxime repudiandae eum! Tenetur vero natus exercitationem nemo voluptas ipsum perspiciatis repellat sint quibusdam maiores pariatur corrupti, temporibus itaque!
                             </div>
                         </div>
                     </div>
