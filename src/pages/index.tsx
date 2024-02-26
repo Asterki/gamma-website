@@ -4,7 +4,14 @@ import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faDownload, faNewspaper, faHome } from "@fortawesome/free-solid-svg-icons";
+import {
+    faDownload,
+    faNewspaper,
+    faHome,
+} from "@fortawesome/free-solid-svg-icons";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import NavbarComponent from "@/components/navbar";
 
 const IndexPage = () => {
@@ -20,15 +27,55 @@ const IndexPage = () => {
                         <div className="max-h-auto lg:h-[32rem] w-full flex items-center justify-between flex-col py-10">
                             <NavbarComponent page="home" />
                             <div className="max-h-56 lg:max-h-[8rem] bg-neutral-700/20 text-white w-full mt-8 py-6 px-10 md:px-56 text-center shadow-lg text-lg ">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in, perspiciatis maxime deleniti quod quae delectus! Praesentium aliquid rem placeat! At maxime repudiandae eum! Tenetur vero natus exercitationem nemo voluptas ipsum perspiciatis repellat sint quibusdam maiores pariatur corrupti, temporibus itaque!
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eos in, perspiciatis maxime
+                                deleniti quod quae delectus! Praesentium aliquid
+                                rem placeat! At maxime repudiandae eum! Tenetur
+                                vero natus exercitationem nemo voluptas ipsum
+                                perspiciatis repellat sint quibusdam maiores
+                                pariatur corrupti, temporibus itaque!
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <section className="flex flex-col items-center justify-center w-full mt-20">
-                    <h1 className="text-3xl font-bold text-white">Gameplay Features</h1>
-                    <p className="text-neutral-300 font-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe corrupti dolores molestiae itaque eum facilis molestias, soluta dolor vero et iure. Minus sed quae sit laborum maxime numquam qui dolores.</p>
+                    <h1 className="text-3xl font-bold text-white">
+                        Gameplay Features
+                    </h1>
+                    <p className="text-neutral-300 font-md">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Saepe corrupti dolores molestiae itaque eum facilis
+                        molestias, soluta dolor vero et iure. Minus sed quae sit
+                        laborum maxime numquam qui dolores.
+                    </p>
+
+                    <Carousel className="w-6/12 rounded-md" autoPlay={true} infiniteLoop={true} centerMode={false}>
+                        <div className="rounded-md">
+                            <img src="/images/carousel/img1.jpg" />
+                        </div>
+                        <div className="rounded-md">
+                            <img src="/images/carousel/img2.jpg" />
+                        </div>
+                        <div className="rounded-md">
+                            <img src="/images/carousel/img3.png" />
+                        </div>
+                        <div className="rounded-md">
+                            <img src="/images/carousel/img4.jpg" />
+                        </div>
+                        <div className="rounded-md">
+                            <img src="/images/carousel/img5.jpg" />
+                        </div>
+                        <div className="rounded-md">
+                            <img src="/images/carousel/img6.jpg" />
+                        </div>
+                        <div className="rounded-md">
+                            <img src="/images/carousel/img7.jpg" />
+                        </div>
+                        <div className="rounded-md">
+                            <img src="/images/carousel/img8.jpg" />
+                        </div>
+                    </Carousel>
                 </section>
 
                 <section className="w-full">
