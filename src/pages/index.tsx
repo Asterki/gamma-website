@@ -26,6 +26,11 @@ const IndexPage = () => {
                     </div>
                 </section>
 
+                <section className="flex flex-col items-center justify-center w-full mt-20">
+                    <h1 className="text-3xl font-bold text-white">Gameplay Features</h1>
+                    <p className="text-neutral-300 font-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe corrupti dolores molestiae itaque eum facilis molestias, soluta dolor vero et iure. Minus sed quae sit laborum maxime numquam qui dolores.</p>
+                </section>
+
                 <section className="w-full">
                     <div className="flex md:flex-row flex-col items-center w-full justify-center mt-16">
                         <Link
@@ -53,18 +58,6 @@ const IndexPage = () => {
                         </Link>
                     </div>
                 </section>
-
-                {/* <section className="w-full">
-                    <div className="bg-green-300/20 flex flex-col items-center justify-center">
-                        <div className="absolute">
-                            <img
-                                src="/images/banner.png"
-                                className="w-6/12 opacity-30 blur-md"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                </section> */}
             </main>
         </div>
     );

@@ -9,7 +9,7 @@ import {
 import { NextPage } from "next";
 
 interface ComponentProps {
-    page: "home" | "download" | "news" | "discord" | "github";
+    page: "home" | "download" | "guide" | "discord" | "github";
 }
 
 const NavbarComponent: NextPage<ComponentProps> = (props) => {
