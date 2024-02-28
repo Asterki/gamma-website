@@ -16,7 +16,7 @@ interface ComponentProps {
 
 const NavbarComponent: NextPage<ComponentProps> = (props) => {
     return (
-        <div className="flex items-center justify-center flex-col">
+        <div className="flex items-center justify-center flex-col mt-4">
             <img src="/images/splash.png" alt="" className="max-h-[16rem]" />
             <div className="max-h-56 lg:max-h-[4rem] w-full p-4 inline-flex items-center justify-center text-white/50 text-2xl box-shadow-md">
                 <Link href="/" className="flex flex-col items-center justify-center mx-2 md:mx-4">
