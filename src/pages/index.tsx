@@ -3,12 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
-import {
-    faDownload,
-    faNewspaper,
-    faHome,
-} from "@fortawesome/free-solid-svg-icons";
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -50,7 +46,12 @@ const IndexPage = () => {
                         laborum maxime numquam qui dolores.
                     </p>
 
-                    <Carousel className="w-6/12 rounded-md" autoPlay={true} infiniteLoop={true} centerMode={false}>
+                    <Carousel
+                        className="w-6/12 rounded-md"
+                        autoPlay={true}
+                        infiniteLoop={true}
+                        centerMode={false}
+                    >
                         <div className="rounded-md">
                             <img src="/images/carousel/img1.jpg" />
                         </div>
