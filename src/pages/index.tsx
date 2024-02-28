@@ -23,13 +23,10 @@ const IndexPage = () => {
                         <div className="max-h-auto lg:h-[32rem] w-full flex items-center justify-between flex-col py-10">
                             <NavbarComponent page="home" />
                             <div className="max-h-56 lg:max-h-[8rem] bg-neutral-700/20 text-white w-full mt-8 py-6 px-10 md:px-56 text-center shadow-lg text-lg ">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Eos in, perspiciatis maxime
-                                deleniti quod quae delectus! Praesentium aliquid
-                                rem placeat! At maxime repudiandae eum! Tenetur
-                                vero natus exercitationem nemo voluptas ipsum
-                                perspiciatis repellat sint quibusdam maiores
-                                pariatur corrupti, temporibus itaque!
+                                G.A.M.M.A. aims at providing a balanced
+                                survival, scavenging, cooking, crafting and
+                                repairing focused experience with a long
+                                progression and smooth gameplay.
                             </div>
                         </div>
                     </div>

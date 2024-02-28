@@ -2,36 +2,54 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import NavbarComponent from "@/components/navbar";
 
 const InstallIndex = () => {
     return (
-        <div className="bg-[#171717] min-h-screen w-full">
+        <div className="bg-[#171717] min-h-screen w-full text-white">
             <Head>
                 <title>Stalker G.A.M.M.A. | Install</title>
             </Head>
 
-            <main className="flex items-center justify-center w-full">
-                <section className="flex flex-col items-center justify-center w-full">
-                    <div className="bg-green-400/60 w-full p-4 flex items-center justify-center text-white/50 text-2xl box-shadow-md shadow-green-400/30 shadow-lg">
-                        <FontAwesomeIcon
-                            icon={faDiscord}
-                            className="mx-2 transition-all hover:text-white cursor-pointer"
-                        />
-                        <FontAwesomeIcon
-                            icon={faGithub}
-                            className="mx-2 transition-all hover:text-white cursor-pointer"
-                        />
-                        <FontAwesomeIcon
-                            icon={faDownload}
-                            className="mx-2 transition-all hover:text-white cursor-pointer"
-                        />
-                    </div>
-                   
+            <main className="flex flex-col items-center justify-center w-full">
+                <NavbarComponent page="download" />
 
-                   Coming Soon, me is lazy
+                <section className="flex flex-col items-center justify-center w-full">
+                    <h1 className="max-h-56 lg:max-h-[8rem] bg-neutral-700/20 text-white w-full mt-8 py-6 px-10 md:px-56 text-center shadow-lg text-lg ">
+                        Installation Guide
+                    </h1>
+
+                    <div className="w-8/12 text-center">
+                        <p>
+                            This modpack is 100% copyright free since it
+                            redistributes little to no copyrighted content
+                            developed by other modders. Indeed, G.A.M.M.A.
+                            downloads every add-on directly from moddb or
+                            github, and installs them automatically. You will
+                            thus directly support modders by installing
+                            G.A.M.M.A. On top of this, each addon original
+                            source (moddb or github page) is directly accessible
+                            from the Mod Organizer 2 instance by right-clicking
+                            addons {">"} visit moddb.com.
+                        </p>
+
+                        <p>
+                            GAMMA is a large project using the work of many
+                            talented modders, and each and everyone one of them
+                            are contributing to making Stalker Anomaly a better
+                            experience. I would thus like to thank all the
+                            modders involved in this project by making all the
+                            GAMMA addons (indicated by G.A.M.M.A... in MO2) free
+                            to use, edit and repost with modifications as long
+                            as the source is indicated (original addon author,
+                            from Stalker GAMMA). Repost of unmodified individual
+                            parts of this project are not recommended and may
+                            harm the community in the long run because updates
+                            happen quite often in this repository and it is thus
+                            better to directly post links to the relevant files
+                            stored here.
+                        </p>
+                    </div>
                 </section>
             </main>
         </div>
