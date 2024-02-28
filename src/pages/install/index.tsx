@@ -61,6 +61,40 @@ const InstallIndex = () => {
                             stored here.
                         </p>
                     </AcordionComponent>
+
+                    <AcordionComponent defaultOpen={true} title="Requirements">
+                        <p className="p-4">
+                            This modpack is 100% copyright free since it
+                            redistributes little to no copyrighted content
+                            developed by other modders. Indeed, G.A.M.M.A.
+                            downloads every add-on directly from moddb or
+                            github, and installs them automatically. You will
+                            thus directly support modders by installing
+                            G.A.M.M.A. On top of this, each addon original
+                            source (moddb or github page) is directly accessible
+                            from the Mod Organizer 2 instance by right-clicking
+                            addons {">"} visit moddb.com.
+                        </p>
+
+                        <br />
+
+                        <p className="p-4">
+                            GAMMA is a large project using the work of many
+                            talented modders, and each and everyone one of them
+                            are contributing to making Stalker Anomaly a better
+                            experience. I would thus like to thank all the
+                            modders involved in this project by making all the
+                            GAMMA addons (indicated by G.A.M.M.A... in MO2) free
+                            to use, edit and repost with modifications as long
+                            as the source is indicated (original addon author,
+                            from Stalker GAMMA). Repost of unmodified individual
+                            parts of this project are not recommended and may
+                            harm the community in the long run because updates
+                            happen quite often in this repository and it is thus
+                            better to directly post links to the relevant files
+                            stored here.
+                        </p>
+                    </AcordionComponent>
                 </section>
             </main>
         </div>

@@ -18,7 +18,7 @@ const AcordionComponent: NextPage<ComponentsProps> = (props) => {
                 onClick={() => setIsOpen(!isOpen)}
                 className="select-none cursor-pointer text-white w-full py-2 px-10 md:px-56 text-center shadow-lg text-lg "
             >
-                Disclaimer
+                {props.title}
             </h1>
             <motion.div
                 variants={{
