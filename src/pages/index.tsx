@@ -9,6 +9,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import NavbarComponent from "@/components/navbar";
+import AlertComponent from "@/components/alert";
 
 const IndexPage = () => {
     return (
@@ -44,32 +45,57 @@ const IndexPage = () => {
                     >
                         <div className="rounded-md">
                             <img src="/images/carousel/img1.jpg" />
+                            <p className="legend bg-red-500 text-blue-500!">
+                                Legend Placeholder
+                            </p>
                         </div>
                         <div className="rounded-md">
                             <img src="/images/carousel/img2.jpg" />
+                            <p className="legend bg-red-500 text-blue-500!">
+                                Legend Placeholder
+                            </p>
                         </div>
                         <div className="rounded-md">
                             <img src="/images/carousel/img3.png" />
+                            <p className="legend bg-red-500 text-blue-500!">
+                                Legend Placeholder
+                            </p>
                         </div>
                         <div className="rounded-md">
                             <img src="/images/carousel/img4.jpg" />
+                            <p className="legend bg-red-500 text-blue-500!">
+                                Legend Placeholder
+                            </p>
                         </div>
                         <div className="rounded-md">
                             <img src="/images/carousel/img5.jpg" />
+                            <p className="legend bg-red-500 text-blue-500!">
+                                Legend Placeholder
+                            </p>
                         </div>
                         <div className="rounded-md">
                             <img src="/images/carousel/img6.jpg" />
+                            <p className="legend bg-red-500 text-blue-500!">
+                                Legend Placeholder
+                            </p>
                         </div>
                         <div className="rounded-md">
                             <img src="/images/carousel/img7.jpg" />
+                            <p className="legend bg-red-500 text-blue-500!">
+                                Legend Placeholder
+                            </p>
                         </div>
                         <div className="rounded-md">
                             <img src="/images/carousel/img8.jpg" />
+                            <p className="legend bg-red-500 text-blue-500!">
+                                Legend Placeholder
+                            </p>
                         </div>
                     </Carousel>
                 </section>
 
                 <section className="w-full">
+                    <AlertComponent type="info" message="Random test message" />
                     <div className="flex md:flex-row flex-col items-center w-full justify-center mt-16">
                         <Link
                             href="https://discord.gg/stalker-gamma"
