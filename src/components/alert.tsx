@@ -2,7 +2,7 @@ import * as React from "react";
 import { NextPage } from "next";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfo } from "@fortawesome/free-solid-svg-icons";
+import { faInfo, faWarning, faX, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 interface ComponentProps {
     message: string;
@@ -17,7 +17,7 @@ const AlertComponent: NextPage<ComponentProps> = ({ message, type }) => {
                     <div className="w-16 h-16 bg-blue-400 flex items-center justify-center rounded-full mr-8">
                         <FontAwesomeIcon
                             icon={faInfo}
-                            className="text-2xl   width"
+                            className="text-2xl"
                         />
                     </div>
                     {message}
@@ -27,7 +27,13 @@ const AlertComponent: NextPage<ComponentProps> = ({ message, type }) => {
     } else if (type == "success") {
         return (
             <div className="items-center justify-center flex w-full">
-                <div className="w-11/12 my-2 p-4 border-2 border-green-400/20 text-white rounded-md text-md bg-green-400/20">
+                <div className="w-11/12 my-2 p-4 border-2 border-green-400/20 text-white rounded-md text-md bg-green-400/20 flex items-center">
+                    <div className="w-16 h-16 bg-green-400 flex items-center justify-center rounded-full mr-8">
+                        <FontAwesomeIcon
+                            icon={faCheck}
+                            className="text-2xl"
+                        />
+                    </div>
                     {message}
                 </div>
             </div>
@@ -35,7 +41,13 @@ const AlertComponent: NextPage<ComponentProps> = ({ message, type }) => {
     } else if (type == "warning") {
         return (
             <div className="items-center justify-center flex w-full">
-                <div className="w-11/12 my-2 p-4 border-2 border-yellow-400/20 text-white rounded-md text-md bg-yellow-400/20">
+                <div className="w-11/12 my-2 p-4 border-2 border-yellow-400/20 text-white rounded-md text-md bg-yellow-400/20 flex items-center">
+                    <div className="w-16 h-16 bg-yellow-400 flex items-center justify-center rounded-full mr-8">
+                        <FontAwesomeIcon
+                            icon={faWarning}
+                            className="text-2xl"
+                        />
+                    </div>
                     {message}
                 </div>
             </div>
@@ -43,7 +55,13 @@ const AlertComponent: NextPage<ComponentProps> = ({ message, type }) => {
     } else {
         return (
             <div className="items-center justify-center flex w-full">
-                <div className="w-11/12 my-2 p-4 border-2 border-red-400/20 text-white rounded-md text-md bg-red-400/20">
+                <div className="w-11/12 my-2 p-4 border-2 border-red-400/20 text-white rounded-md text-md bg-red-400/20 flex items-center">
+                    <div className="w-16 h-16 bg-red-400 flex items-center justify-center rounded-full mr-8">
+                        <FontAwesomeIcon
+                            icon={faX}
+                            className="text-2xl"
+                        />
+                    </div>
                     {message}
                 </div>
             </div>

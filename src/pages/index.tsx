@@ -95,7 +95,7 @@ const IndexPage = () => {
                 </section>
 
                 <section className="w-full">
-                    <AlertComponent type="info" message="Random test message" />
+                    <AlertComponent type="error" message="Random test message" />
                     <div className="flex md:flex-row flex-col items-center w-full justify-center mt-16">
                         <Link
                             href="https://discord.gg/stalker-gamma"
