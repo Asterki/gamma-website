@@ -20,7 +20,7 @@ const IndexPage = () => {
 
             <main className="flex flex-col items-center justify-center w-full">
                 <NavbarComponent page="home" />
-                <div className="max-h-56 lg:max-h-[8rem] bg-neutral-700/20 text-white w-full mt-8 py-6 px-10 md:px-56 text-center shadow-lg text-lg ">
+                <div className="max-h-56 lg:max-h-[8rem] bg-neutral-700/20 text-white w-full mt-8 py-6 px-10 md:px-56 text-center shadow-lg text-lg">
                     G.A.M.M.A. aims at providing a balanced survival,
                     scavenging, cooking, crafting and repairing focused
                     experience with a long progression and smooth gameplay.
@@ -30,7 +30,7 @@ const IndexPage = () => {
                     <h1 className="text-3xl font-bold text-white">
                         Gameplay Features
                     </h1>
-                    <p className="text-neutral-300 font-md">
+                    <p className="text-neutral-300 font-md text-center my-2 mx-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Saepe corrupti dolores molestiae itaque eum facilis
                         molestias, soluta dolor vero et iure. Minus sed quae sit
@@ -38,55 +38,57 @@ const IndexPage = () => {
                     </p>
 
                     <Carousel
-                        className="w-6/12 rounded-md"
+                        className="w-11/12 md:w-7/12 rounded-full"
                         autoPlay={true}
                         infiniteLoop={true}
                         centerMode={false}
+                        showStatus={false}
+                        showThumbs={false}
                     >
-                        <div className="rounded-md">
-                            <img src="/images/carousel/img1.jpg" />
+                        <div>
+                            <img className="rounded-md" src="/images/carousel/img1.jpg" />
                             <p className="legend bg-red-500 text-blue-500!">
                                 Legend Placeholder
                             </p>
                         </div>
-                        <div className="rounded-md">
-                            <img src="/images/carousel/img2.jpg" />
+                        <div>
+                            <img className="rounded-md" src="/images/carousel/img2.jpg" />
                             <p className="legend bg-red-500 text-blue-500!">
                                 Legend Placeholder
                             </p>
                         </div>
-                        <div className="rounded-md">
-                            <img src="/images/carousel/img3.png" />
+                        <div>
+                            <img className="rounded-md" src="/images/carousel/img3.png" />
                             <p className="legend bg-red-500 text-blue-500!">
                                 Legend Placeholder
                             </p>
                         </div>
-                        <div className="rounded-md">
-                            <img src="/images/carousel/img4.jpg" />
+                        <div>
+                            <img className="rounded-md" src="/images/carousel/img4.jpg" />
                             <p className="legend bg-red-500 text-blue-500!">
                                 Legend Placeholder
                             </p>
                         </div>
-                        <div className="rounded-md">
-                            <img src="/images/carousel/img5.jpg" />
+                        <div>
+                            <img className="rounded-md" src="/images/carousel/img5.jpg" />
                             <p className="legend bg-red-500 text-blue-500!">
                                 Legend Placeholder
                             </p>
                         </div>
-                        <div className="rounded-md">
-                            <img src="/images/carousel/img6.jpg" />
+                        <div>
+                            <img className="rounded-md" src="/images/carousel/img6.jpg" />
                             <p className="legend bg-red-500 text-blue-500!">
                                 Legend Placeholder
                             </p>
                         </div>
-                        <div className="rounded-md">
-                            <img src="/images/carousel/img7.jpg" />
+                        <div>
+                            <img className="rounded-md" src="/images/carousel/img7.jpg" />
                             <p className="legend bg-red-500 text-blue-500!">
                                 Legend Placeholder
                             </p>
                         </div>
-                        <div className="rounded-md">
-                            <img src="/images/carousel/img8.jpg" />
+                        <div>
+                            <img className="rounded-md" src="/images/carousel/img8.jpg" />
                             <p className="legend bg-red-500 text-blue-500!">
                                 Legend Placeholder
                             </p>
@@ -95,7 +97,6 @@ const IndexPage = () => {
                 </section>
 
                 <section className="w-full">
-                    <AlertComponent type="error" message="Random test message" />
                     <div className="flex md:flex-row flex-col items-center w-full justify-center mt-16">
                         <Link
                             href="https://discord.gg/stalker-gamma"
