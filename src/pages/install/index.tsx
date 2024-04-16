@@ -25,7 +25,7 @@ const InstallIndex = () => {
 
                 <section className="flex flex-col items-center justify-center w-full ">
                     <h1 className="max-h-56 lg:max-h-[8rem] bg-neutral-700/20 text-white w-full mt-8 py-6 px-10 md:px-56 text-center shadow-lg text-lg ">
-                        RANDOM TITLE
+                        Installation Guide
                     </h1>
 
                     <p>This page is under heavy development and may change.</p>
@@ -89,9 +89,75 @@ const InstallIndex = () => {
                             <li>Processor: Intel Core i5-2500K</li>
                             <li>Memory: 8 GB RAM</li>
                             <li>Graphics: Nvidia GeForce GTX 760</li>
-                            <li>DirectX: DX10 Onwards (DX8 and DX9 may be used by following <Link className="text-blue-400 hover:underline" href="/">these steps after installing Stalker GAMMA</Link>)</li>
-                            <li>Storage: 100 GB available space (SSD Recommended)</li>
+                            <li>
+                                DirectX: DX10 Onwards (DX8 and DX9 may be used
+                                by following{" "}
+                                <Link
+                                    className="text-blue-400 hover:underline"
+                                    href="/"
+                                >
+                                    these steps after installing Stalker GAMMA
+                                </Link>
+                                )
+                            </li>
+                            <li>
+                                Storage: 100 GB available space (SSD
+                                Recommended) Note: This does not account for
+                                additional modifications that may be added
+                            </li>
                         </ul>
+                    </AcordionComponent>
+
+                    <AcordionComponent
+                        defaultOpen={true}
+                        title="READ BEFORE PROCEEDING"
+                    >
+                        <h1 className="text-xl font-bold">
+                            CLEAN, UNMODIFIED COPY OF ANOMALY 1.5.1 IS REQUIRED.
+                            THIS GUIDE PROVIDE A LINK FOR IT.
+                        </h1>
+                        <h1 className="text-xl font-bold">
+                            YOU WILL NEED TO DOWNLOAD THE 1.5.2 UPDATE FOR
+                            ANOMALY. THIS GUIDE PROVIDE A LINK FOR IT.
+                        </h1>
+                        <h1 className="text-xl font-bold">
+                            DON&APOS;T SKIP THE 1.5.2 UPDATE, YOU NEED IT, GAMMA
+                            WON&APOS;T WORK WITHOUT IT.
+                        </h1>
+                        <ul className="mt-4 list list-disc">
+                            <li className="list-item">
+                                NONE OF THESE STEPS ARE OPTIONAL, ALL ARE HARD
+                                REQUIREMENTS, DON&apos;T SKIP THEM.
+                            </li>
+                            <li className="list-item">
+                                FIREWALL AND ANTI-VIRUS NEED TO BE EITHER OFF OR
+                                WITH EXCEPTIONS FOR ANOMALY AND THE LAUNCHER.
+                            </li>
+                            <li className="list-item">
+                                DON&apos;T CONTACT STAFF IN PRIVATE ASKING FOR
+                                HELP, YOU WILL BE IGNORED.{" "}
+                            </li>
+                        </ul>
+                        If you have any issues with the installation, ask in{" "}
+                        <Link
+                            className="px-2 py-1 bg-blue-500/20 text-white rounded font-bold hover:bg-blue-600/50 transition-all focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
+                            href={
+                                "https://discord.com/channels/912320241713958912/1026866080347603065"
+                            }
+                        >
+                            #only-installation-problems
+                        </Link>
+                        {" "}and or in{" "}
+                        <Link
+                            className="px-2 py-1 bg-blue-500/20 text-white rounded font-bold hover:bg-blue-600/50 transition-all focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
+                            href={
+                                "https://discord.com/channels/912320241713958912/922555488665743391"
+                            }
+                        >
+                            #base-gamma-support
+                        </Link>
+                        {" "}
+                        (You will need to join the <Link href={"/discord"} className="text-blue-400">discord server</Link> to access these chat channels)
                     </AcordionComponent>
                 </section>
             </main>
