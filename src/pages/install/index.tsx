@@ -23,7 +23,7 @@ const InstallIndex = () => {
             <main className="flex flex-col items-center justify-center w-full">
                 <NavbarComponent page="download" />
 
-                <section className="flex flex-col items-center justify-center w-full ">
+                <section className="flex flex-col items-center justify-center w-full mb-32">
                     <h1 className="max-h-56 lg:max-h-[8rem] bg-neutral-700/20 text-white w-full mt-8 py-6 px-10 md:px-56 text-center shadow-lg text-lg ">
                         Installation Guide
                     </h1>
@@ -163,16 +163,24 @@ const InstallIndex = () => {
                         to access these chat channels)
                     </AcordionComponent>
 
+                    <h1 className="text-center mt-8 mb-[-30px] text-2xl">
+                        INSTALLATION STEPS, ALL OF THEM ARE REQUIRED
+                    </h1>
+
                     <AcordionComponent
                         defaultOpen={false}
-                        title="Important before proceeding"
+                        title="Space Requirement"
                     >
                         1. You&apos;ll need AT LEAST 16 GB for Anomaly and 100+
                         GB for G.A.M.M.A. on your hard drive/SSD, we HIGHLY
                         RECOMMEND to use a SSD. MAKE SURE YOU HAVE SPACE IN YOUR
                         HARD DRIVE/SSD OR YOU WILL HAVE PROBLEMS.
-                        <br />
-                        <br />
+                    </AcordionComponent>
+
+                    <AcordionComponent
+                        defaultOpen={false}
+                        title="7Zip Installation"
+                    >
                         2. 7Zip: https://www.7-zip.org/download.html --- If you
                         don&apos;t know which version to get, get the 64-bit
                         Windows version. If you&apos;re wondering &quot;why do I
@@ -181,6 +189,78 @@ const InstallIndex = () => {
                         the program is known to cause extraction issues for
                         files with specific file extensions, in this case .7zip
                         and .7z, this is why.
+                    </AcordionComponent>
+
+                    <AcordionComponent
+                        defaultOpen={false}
+                        title="Folder Creation"
+                    >
+                        Create <b>TWO</b> different folders at the <b>root</b>{" "}
+                        of one of your drives, e.g. C:/, D:/,{" "}
+                        <b>
+                            whatever drive is fine, you&apos;re not obligated to
+                            use C: if you don&apos;t want to or just cannot use
+                            it.
+                        </b>
+                        <br />
+                        One folder will contain Anomaly and the other will
+                        contain G.A.M.M.A. <br />
+                        <b>
+                            <u>DO NOT</u>
+                        </b>{" "}
+                        create nor place these folders in{" "}
+                        <b>
+                            Downloads, Program Files, Program Files x86,
+                            Documents, Desktop, OneDrive.
+                        </b>
+                        <br />
+                        <br />
+                        <p className="text-xl font-bold">
+                            THIS <u>ISN&apos;T</u> A SUGGESTION, these folders
+                            are <u>KNOWN</u> to be problematic with videogames.
+                            <br />
+                            <u>DON&apos;T USE THEM.</u>
+                        </p>
+                        <br />
+                        <div>
+                            For example, you can do this: <br />
+                            <b>C</b>:/Anomaly and <b>C</b>:/GAMMA. <br />
+                            But you can also do this: <br />
+                            <b>D</b>:/Anomaly and <b>D</b>:/GAMMA.
+                        </div>
+                        <br />
+                        <div>
+                            <b>DO NOT</b> create something like: D:/Stalker/,
+                            with <b>both</b> Anomaly and GAMMA folders{" "}
+                            <b>
+                                inside of it, this only leads to problems,{" "}
+                                <u>DON&apos;T DO IT.</u>
+                            </b>{" "}
+                            Your OCD will have to vent with something else.
+                            <br />
+                            Point is: as long as you have{" "}
+                            <b>TWO DIFFERENT FOLDERS</b> for Anomaly and
+                            G.A.M.M.A on the <b>same root drive</b>, it will be
+                            fine. <br />
+                            <b>DO NOT</b> use special characters in any of the
+                            folders when you name them, such as: {"[-,@#$%"},
+                            etc. <br />
+                            For this guide, we will use C:/ as our preferred
+                            drive, so{" "}
+                            <b>
+                                adjust your installation accordingly if you use
+                                another drive
+                            </b>
+                            , the locations of everything are{" "}
+                            <b>exactly the same</b>, the only thing that will
+                            change is your <b>drive letter</b>.
+                            <div className="flex items-center justify-center">
+                                <img
+                                    src="/images/installation/folders.webp"
+                                    alt="Folders"
+                                />
+                            </div>
+                        </div>
                     </AcordionComponent>
                 </section>
             </main>
