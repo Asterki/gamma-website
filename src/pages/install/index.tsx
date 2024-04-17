@@ -65,7 +65,7 @@ const InstallIndex = () => {
                     </AcordionComponent>
 
                     <AcordionComponent
-                        defaultOpen={true}
+                        defaultOpen={false}
                         title="Minimum Requirements"
                     >
                         <p className="p-4">
@@ -109,7 +109,7 @@ const InstallIndex = () => {
                     </AcordionComponent>
 
                     <AcordionComponent
-                        defaultOpen={true}
+                        defaultOpen={false}
                         title="READ BEFORE PROCEEDING"
                     >
                         <h1 className="text-xl font-bold">
@@ -146,8 +146,8 @@ const InstallIndex = () => {
                             }
                         >
                             #only-installation-problems
-                        </Link>
-                        {" "}and or in{" "}
+                        </Link>{" "}
+                        and or in{" "}
                         <Link
                             className="px-2 py-1 bg-blue-500/20 text-white rounded font-bold hover:bg-blue-600/50 transition-all focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
                             href={
@@ -155,9 +155,32 @@ const InstallIndex = () => {
                             }
                         >
                             #base-gamma-support
-                        </Link>
-                        {" "}
-                        (You will need to join the <Link href={"/discord"} className="text-blue-400">discord server</Link> to access these chat channels)
+                        </Link>{" "}
+                        (You will need to join the{" "}
+                        <Link href={"/discord"} className="text-blue-400">
+                            discord server
+                        </Link>{" "}
+                        to access these chat channels)
+                    </AcordionComponent>
+
+                    <AcordionComponent
+                        defaultOpen={false}
+                        title="Important before proceeding"
+                    >
+                        1. You&apos;ll need AT LEAST 16 GB for Anomaly and 100+
+                        GB for G.A.M.M.A. on your hard drive/SSD, we HIGHLY
+                        RECOMMEND to use a SSD. MAKE SURE YOU HAVE SPACE IN YOUR
+                        HARD DRIVE/SSD OR YOU WILL HAVE PROBLEMS.
+                        <br />
+                        <br />
+                        2. 7Zip: https://www.7-zip.org/download.html --- If you
+                        don&apos;t know which version to get, get the 64-bit
+                        Windows version. If you&apos;re wondering &quot;why do I
+                        have to use 7zip? Can&apos;,t I just use WinRAR as I
+                        always do?&quot; No, you can&apos;t use WinRAR, because
+                        the program is known to cause extraction issues for
+                        files with specific file extensions, in this case .7zip
+                        and .7z, this is why.
                     </AcordionComponent>
                 </section>
             </main>
