@@ -308,6 +308,37 @@ const InstallIndex = () => {
                         And we also suggest to use QBittorrent if you don&apos;t have
                         a program yet: <Link href="https://www.qbittorrent.org/download" className="text-blue-400">QBittorrent</Link>
                     </AcordionComponent>
+
+                    <AcordionComponent
+                        defaultOpen={false}
+                        title="Anomaly 1.5.1"
+                    >
+                        Anomaly 1.5.1 - <b>DO NOT</b> use an already installed
+                        and modded Anomaly, you need a clean Anomaly folder.
+                        This is the official Moddb link for it: <br />
+                        <h2 className="text-2xl">
+                            <Link
+                                href={
+                                    "https://www.moddb.com/mods/stalker-anomaly/downloads/stalker-anomaly-151"
+                                }
+                                className="text-blue-400"
+                            >
+                                https://www.moddb.com/mods/stalker-anomaly/downloads/stalker-anomaly-151
+                            </Link>
+                        </h2>
+                        An official torrent is available via this magnet link:{" "}
+                        <br />
+                        <textarea
+                            name=""
+                            id=""
+                            className="w-full p-2 bg-[#333] text-white"
+                            readOnly={true}
+                        >
+                            magnet:?xt=urn:btih:c307c208636d1fd98ca4fe70ca0c692035659855&dn=Anomaly-1.5.1.7z&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://bt1.archive.org:6969/announce&tr=udp://bt2.archive.org:6969/announce&tr=udp://tracker.torrent.eu.org:451/announce
+                        </textarea>
+                        And we also suggest to use QBittorrent if you don&apos;t have
+                        a program yet: <Link href="https://www.qbittorrent.org/download" className="text-blue-400">QBittorrent</Link>
+                    </AcordionComponent>
                 </section>
             </main>
         </div>
