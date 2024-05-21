@@ -13,7 +13,7 @@ const AcordionComponent: NextPage<ComponentsProps> = (props) => {
     const [isOpen, setIsOpen] = React.useState(props.defaultOpen);
 
     return (
-        <div className="w-8/12 text-center bg-neutral-700/10 mt-8 border-b-2 border-neutral-700/20">
+        <div className="w-full text-center bg-neutral-700/10 mt-8 border-b-2 border-neutral-700/20">
             <h1
                 onClick={() => setIsOpen(!isOpen)}
                 className="select-none cursor-pointer text-white w-full py-2 px-10 md:px-56 text-center shadow-lg text-lg "
