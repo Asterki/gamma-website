@@ -339,31 +339,28 @@ const InstallIndex = () => {
 
                         <AcordionComponent
                             defaultOpen={false}
-                            title="Anomaly 1.5.1"
+                            title="Update 1.5.2 for Anomaly (REQUIRED)"
                         >
-                            Anomaly 1.5.1 - <b>DO NOT</b> use an already
-                            installed and modded Anomaly, you need a clean
-                            Anomaly folder. This is the official Moddb link for
-                            it: <br />
+                            This is the official Moddb link for it:
                             <h2 className="text-2xl">
                                 <Link
                                     href={
-                                        "https://www.moddb.com/mods/stalker-anomaly/downloads/stalker-anomaly-151"
+                                        "https://www.moddb.com/mods/stalker-anomaly/downloads/stalker-anomaly-151-to-152"
                                     }
                                     className="text-blue-400"
                                 >
-                                    https://www.moddb.com/mods/stalker-anomaly/downloads/stalker-anomaly-151
+                                    https://www.moddb.com/mods/stalker-anomaly/downloads/stalker-anomaly-151-to-152
                                 </Link>
                             </h2>
                             An official torrent is available via this magnet
-                            link: <br />
+                            link:
                             <textarea
                                 name=""
                                 id=""
                                 className="w-full p-2 bg-[#333] text-white"
                                 readOnly={true}
                             >
-                                magnet:?xt=urn:btih:c307c208636d1fd98ca4fe70ca0c692035659855&dn=Anomaly-1.5.1.7z&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://bt1.archive.org:6969/announce&tr=udp://bt2.archive.org:6969/announce&tr=udp://tracker.torrent.eu.org:451/announce
+                                magnet:?xt=urn:btih:06580e9c871086d5b847a84940bd89b6d97c975f&dn=Anomaly-1.5.1-to-1.5.2-Update.7z&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://bt1.archive.org:6969/announce&tr=udp://bt2.archive.org:6969/announce&tr=udp://tracker.torrent.eu.org:451/announce
                             </textarea>
                             And we also suggest to use QBittorrent if you
                             don&apos;t have a program yet:{" "}
@@ -373,6 +370,56 @@ const InstallIndex = () => {
                             >
                                 QBittorrent
                             </Link>
+                        </AcordionComponent>
+
+                        <AcordionComponent
+                            defaultOpen={false}
+                            title="GAMMA RC3.7z"
+                        >
+                            Download the G.A.M.M.A. client GAMMA RC3.7z from
+                            this link:
+                            <h2 className="text-2xl">
+                                <Link
+                                    href={"https://gofile.io/d/ccbnSP"}
+                                    className="text-blue-400"
+                                >
+                                    https://gofile.io/d/ccbnSP
+                                </Link>
+                            </h2>
+                            <br />
+                            <h2 className="text-xl">
+                                We have mirrors down below if this one
+                                doesn&apos;t work or is too slow.
+                            </h2>
+                            GAMMA RC3: Mirror 1:
+                            <h2 className="text-2xl">
+                                <Link
+                                    href={
+                                        "https://www.mediafire.com/file/y9e4fg4qbi7m6et/GAMMA_RC3.7z/file"
+                                    }
+                                    className="text-blue-400"
+                                >
+                                    https://www.mediafire.com/file/y9e4fg4qbi7m6et/GAMMA_RC3.7z/file
+                                </Link>
+                            </h2>
+                            Mirror 2: Soon™️ in theory
+                            <br />
+                            <br />
+                            <p className="text-xl">
+                                Before moving on to the Part 2 of the guide,
+                                check and be sure you have these files:{" "}
+                                <Link
+                                    href={"https://imgur.com/Rmt9vYg"}
+                                    className="text-blue-400"
+                                >
+                                    https://imgur.com/Rmt9vYg
+                                </Link>
+                                <br />
+                                If you&apos;re following the video guide you
+                                won&apos;t have the
+                                {' "downloads.zip"'} file, do&apos;t worry about
+                                it because it&apos;s an optional file.
+                            </p>
                         </AcordionComponent>
                     </div>
                 </section>
