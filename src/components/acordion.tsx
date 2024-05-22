@@ -41,7 +41,7 @@ const AcordionComponent: NextPage<ComponentsProps> = (props) => {
                 }}
                 initial="closed"
                 animate={isOpen ? "open" : "closed"}
-                className="overflow-y-hidden"
+                className="overflow-y-hidden px-2 break-words"
             >
                 {props.children}
             </motion.div>
